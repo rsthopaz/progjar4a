@@ -41,22 +41,6 @@ class FileInterface:
         
         except Exception as e:
            return dict(status='ERROR', data=str(e))    
-    
-    def download(self, params=[]):
-        return self.get(params)  # alias saja
-
-    def ddownload3(self, params=[]):
-        try:
-            filename = params[0]
-            if not os.path.exists(filename):
-                return dict(status='ERROR', data='File not found')
-        
-            with open(filename, 'rb') as f:
-                return f.read()  # Return raw file content
-        except Exception as e:
-            return str(e).encode()  # Return error as bytes
-
-
 
     def get(self,params=[]):
         try:
