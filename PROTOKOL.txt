@@ -39,3 +39,34 @@ GET
   - status: ERROR
   - data: pesan kesalahan
 
+HAPUS
+* TUJUAN: untuk menghapus file di server dengan menyebutkan nama file dalam parameter
+* PARAMETER:
+  - PARAMETER1 : nama file
+* RESULT:
+- BERHASIL: 
+  - status: OK
+  - data : nama file yang dihapus
+- GAGAL:
+  - FILE TIDAK ADA
+    - status: ERROR
+    - data : file tidak ditemukan
+  - ERROR
+    - status: ERROR
+    - data: pesan kesalahan
+
+UPLOAD
+* TUJUAN: untuk mengupload file dari sisi client ke server dengan menyebutkan nama file dan isi file
+* PARAMETER:
+  - PARAMETER1: nama file
+  - PARAMETER2 & seterusnya: isi file
+* CHECK FILE:
+  - status: OK
+  - data : nama file yang diupload
+* RESULT:
+- BERHASIL: 
+  - status: OK
+  - data : nama file yang diupload
+- GAGAL:
+  - status: ERROR
+  - data: pesan kesalahan
