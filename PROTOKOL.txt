@@ -61,6 +61,7 @@ UPLOAD
   - PARAMETER1: nama file
   - PARAMETER2 & seterusnya: isi file
 * CHECK FILE:
+- EXISTS:
   - status: OK
   - data : nama file yang diupload
 * RESULT:
