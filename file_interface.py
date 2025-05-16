@@ -32,7 +32,7 @@ class FileInterface:
            if os.path.exists(filename):
                return dict(status='OK', data=f'{filename} file sudah ada')
            filedata_64 = " ".join(params[1:])
-           filedata = base64.b64encode(filedata_64.encode()).decode()
+           filedata = base64.b64decode(filedata_64.encode())
 
            with open(filename, 'w') as f:
                f.write(filedata)
