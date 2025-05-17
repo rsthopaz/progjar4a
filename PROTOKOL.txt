@@ -59,7 +59,7 @@ UPLOAD
 * TUJUAN: untuk mengupload file dari sisi client ke server dengan menyebutkan nama file dan isi file
 * PARAMETER:
   - PARAMETER1: nama file
-  - PARAMETER2 & seterusnya: isi file
+  - PARAMETER2 & seterusnya: isi file (dalam bentuk encode base64)
 * CHECK FILE:
 - EXISTS:
   - status: OK
